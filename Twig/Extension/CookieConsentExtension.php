@@ -90,7 +90,7 @@ class CookieConsentExtension extends \Twig_Extension
         $config['options'] = $this->appendLabelTranslations($config['options']);
 
         return $twigEnvironment->render(
-            'IndigoCookieConsentBundle::cookie_consent.html.twig',
+            '@IndigoCookieConsent/cookie_consent.html.twig',
             $config
         );
     }
